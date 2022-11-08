@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+    <h1>Task 1. Calculator with text box and dropdown list</h1>
+    <div class="t1container">
+        <input class="task1" id="firstnum" type="text">
+        <select name="task1sel" id="task1sel">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input class="task1" id="secondnum" type="text">
+        <button onclick="getProdT1()">=</button>
+    </div>
+    <br>
+    <h1>Task 2. Calculator with text box and option buttons</h1>
+    <div class="t2container">
+        <input class="task2" id="thirdnum" type="number"><br>
+        <input type="radio" name="operator-2" id="+" value="+">
+        <label for="+">Addition</label><br>
+        <input type="radio" name="operator-2" id="-" value="-">
+        <label for="-">Substraction</label><br>
+        <input type="radio" name="operator-2" id="*" value="*">
+        <label for="*">Multiplication</label><br>
+        <input type="radio" name="operator-2" id="/" value="/">
+        <label for="/">Distribution</label><br>
+        <input class="task2" id="forthnum" type="number">
+        <button onclick="getProdT2()">=</button>
+    </div>
+    <br>
+    <h1>Task 3. Calculator with text box and increment/decrement buttons</h1>
+    <div class="t3container">
+        <button onclick="downNum1()">▼</button>
+        <input class="task1" type="text" id="fifthnum">
+        <button onclick="upNum1()">▲</button>
+        <select name="task3sel" id="task3sel">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button onclick="downNum2()">▼</button>
+        <input class="task1" type="text" id="sixthnum">
+        <button onclick="upNum2()">▲</button>
+        <button onclick="getProdT3()">=</button>
+    </div>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>
